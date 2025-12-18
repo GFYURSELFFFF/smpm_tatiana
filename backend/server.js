@@ -23,3 +23,5 @@ app.get("/health", (req, res) => {
 app.listen(3000, () => {
   console.log("Servidor rodando na porta 3000");
 });
+
+app.use("/maintenance", require("./src/routes/Maintenance"));
